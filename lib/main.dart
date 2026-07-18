@@ -13,3 +13,6 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(debugShowCheckedModeBanner: false, home: Scaffold());
   }
 }
+
+//mytodo list:
+//continue => https://youtu.be/Ct9CrMegezQ?si=kHtJV34BCpUGZzk7
