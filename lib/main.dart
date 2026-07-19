@@ -1,3 +1,4 @@
+import 'package:ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -13,9 +14,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      theme: ThemeData(
-        textTheme: TextTheme(bodyLarge: TextStyle(fontSize: 14)),
-      ),
+      theme: lightMode,
       darkTheme: ThemeData(),
       home: Scaffold(),
     );
