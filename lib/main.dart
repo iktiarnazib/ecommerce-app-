@@ -14,8 +14,8 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      theme: lightMode,
-      darkTheme: ThemeData(),
+      theme: TAppTheme.lightTheme,
+      darkTheme: TAppTheme.darkTheme,
       home: Scaffold(),
     );
   }
