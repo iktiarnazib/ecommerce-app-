@@ -13,7 +13,9 @@ class MyApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      theme: ThemeData(),
+      theme: ThemeData(
+        textTheme: TextTheme(bodyLarge: TextStyle(fontSize: 14)),
+      ),
       darkTheme: ThemeData(),
       home: Scaffold(),
     );
