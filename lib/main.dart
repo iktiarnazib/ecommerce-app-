@@ -14,6 +14,7 @@ class MyApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       theme: ThemeData(),
+      darkTheme: ThemeData(),
       home: Scaffold(),
     );
   }
