@@ -22,6 +22,6 @@ class MyApp extends ConsumerWidget {
 }
 
 //mytodo list:
-//continue => https://youtu.be/Ct9CrMegezQ?si=k492veCR3Qs-kuUn (minute: 11:35)
+//continue => https://youtu.be/3StjTeWs-ZQ?si=vulwO51rBQskAyAl (minute: 0:00)
 //Edit the video as much as you can
 //upload video to introduction
