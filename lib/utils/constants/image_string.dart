@@ -1,1 +1,3 @@
-class TImage {}
+class TImage {
+  TImage._();
+}
