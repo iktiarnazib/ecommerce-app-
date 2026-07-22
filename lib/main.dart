@@ -11,5 +11,4 @@ void main() {
 
 //mytodo list:
 //continue => https://youtu.be/3StjTeWs-ZQ?si=vulwO51rBQskAyAl (minute: 0:00)
-//Edit the video as much as you can
-//upload video to introduction
+//edited video and updated.
