@@ -10,5 +10,5 @@ void main() {
 }
 
 //mytodo list:
-//continue => https://youtu.be/3StjTeWs-ZQ?si=vulwO51rBQskAyAl (minute: 0:00)
+//continue => https://youtu.be/3StjTeWs-ZQ?si=vulwO51rBQskAyAl (minute: 7:43)
 //edited video and updated.
