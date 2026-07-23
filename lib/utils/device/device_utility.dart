@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -46,5 +47,29 @@ class TDeviceUtility {
 
   static double getBottomNavigationBarHeight() {
     return kBottomNavigationBarHeight;
+  }
+
+  static double getAppBarHeight() {
+    return kToolbarHeight;
+  }
+
+  static double getKeyboardHeight(BuildContext context) {
+    final viewInsets = MediaQuery.of(context).viewInsets;
+    return viewInsets.bottom;
+  }
+
+  static Future<bool> isKeyboardVisible(BuildContext context) async {
+    final viewInsets = View.of(context).viewInsets;
+    return viewInsets.bottom > 0;
+  }
+
+  static Future<bool> isPhysicalDevice() async {
+    return defaultTargetPlatform == TargetPlatform.android ||
+        defaultTargetPlatform == TargetPlatform.iOS;
+  }
+
+  static void vibrate(Duration duration) {
+    HapticFeedback.vibrate();
+    Future.delayed(duration, () => HapticFeedback.vibrate());
   }
 }
