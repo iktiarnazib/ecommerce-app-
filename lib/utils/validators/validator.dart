@@ -41,4 +41,18 @@ class TValidator {
 
     return null;
   }
+
+  static String? validatePhoneNumber(String? number) {
+    if (number == null || number.isEmpty) {
+      return 'Number is required';
+    }
+
+    final phoneRegExp = RegExp(r'^\d{10}$');
+
+    if (!phoneRegExp.hasMatch(number)) {
+      return 'Invalid phone number, (10 degit required)';
+    }
+
+    return null;
+  }
 }
