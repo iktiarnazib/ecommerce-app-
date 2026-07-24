@@ -13,4 +13,32 @@ class TValidator {
 
     return null;
   }
+
+  static String? validatePassword(String? password) {
+    if (password == null || password.isEmpty) {
+      return 'Password is required';
+    }
+
+    //check if the password is 6 character long
+    if (password.length < 6) {
+      return 'Password must be 6 characters long';
+    }
+
+    // Check for uppercase letters
+    if (!password.contains(RegExp(r'[A-Z]'))) {
+      return 'Password must contain at least one uppercase letter.';
+    }
+
+    // Check for numbers
+    if (!password.contains(RegExp(r'[0-9]'))) {
+      return 'Password must contain at least one number.';
+    }
+
+    // Check for special characters
+    if (!password.contains(RegExp(r'[!@#$%^&*(),.?":{}|<>]'))) {
+      return 'Password must contain at least one special character.';
+    }
+
+    return null;
+  }
 }
