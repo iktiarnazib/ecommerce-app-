@@ -23,13 +23,29 @@ class THttpClient {
     return _handleResponse(response);
   }
 
+  //helper method for put request
+  static Future<Map<String, dynamic>> put(String endpoint, dynamic data) async {
+    final response = await http.put(
+      Uri.parse('$_baseUrl/$endpoint'),
+      headers: {'Content-Type': 'Application/json'},
+      body: jsonEncode(data),
+    );
+    return _handleResponse(response);
+  }
+
+  //helper method for delete request
+  static Future<Map<String, dynamic>> delete(String endpoint) async {
+    final response = await http.delete(Uri.parse('$_baseUrl/$endpoint'));
+    return _handleResponse(response);
+  }
+
   static Future<Map<String, dynamic>> _handleResponse(
     http.Response response,
   ) async {
     if (response.statusCode == 200) {
       return jsonDecode(response.body);
     } else {
-      throw Exception('Failed to load data ${response.statusCode}');
+      throw Exception('Failed to load data: ${response.statusCode}');
     }
   }
 }
