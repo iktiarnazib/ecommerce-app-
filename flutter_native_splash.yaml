@@ -1,0 +1,52 @@
+flutter_native_splash:
+
+  color: "#ffffff"  ##====================================[REQUIRED]==========
+  color_dark: "#000000"
+  # platform-specific color. will override general color if active:
+  color_android: "#ffffff"
+  color_dark_android: "#000000"
+  color_ios: "#ffffff"
+  color_dark_ios: "#000000"
+  # color_web: "#42a5f5"
+  #color_dark_web: "#042a49"
+
+  image:                assets/logos/light_screen_logo.png
+  image_dark:          assets/logos/dark_screen_logo.png 
+
+
+  # branding position:
+  # you can use bottom, bottomRight, and bottomLeft. The default values is 
+  # bottom if not specified or specified something else.
+  #branding_mode: bottom                # default bottom
+  #branding_bottom_padding: 24          # default 0
+  #branding_bottom_padding_android: 24  # default 0
+  #branding_bottom_padding_ios: 24      # default 0
+  # branding bottom padding web is not available yet.
+
+ 
+  fullscreen: true                # default false
+
+  android_12:
+    # background color
+    color: "#ffffff"
+    color_dark: "#000000"
+
+    # center-logo
+    # If this parameter is not specified, the app's launcher icon will be used instead. 
+    # Please note that the splash screen will be clipped to a circle on the center of the screen. 
+    # with background: 960×960 px (fit within circle 640px in diameter)    
+    # without background: 1152×1152 px (fit within circle 768px in diameter)
+    # ensure that the most important design elements of your image are placed within a circular area 
+    image: assets/logos/light_screen_logo.png 
+    image_dark: assets/logos/dark_screen_logo.png
+
+    # center-logo background color
+    icon_background_color: "#000000"
+    icon_background_color_dark: "#000000"
+
+    # branding:
+    # The branding image dimensions must be 800x320 px.
+    #branding:      assets/dart.png      
+    #branding_dark: assets/dart_dark.png
+
+  web: false
