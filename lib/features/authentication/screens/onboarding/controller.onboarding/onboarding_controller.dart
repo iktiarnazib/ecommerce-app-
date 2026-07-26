@@ -16,4 +16,32 @@ class OnboardingNotifier extends StateNotifier<int> {
   }
 
   final pageController = PageController();
+
+  //on page scroll update
+  void updatePageIndicator(int index) {
+    state = index;
+  }
+
+  //on dot click update
+  void onDotClickUpdate(int index) {
+    state = index;
+    pageController.jumpToPage(state);
+  }
+
+  //on next page click
+  void nextPage() {
+    if (state == 2) {
+      state = 0;
+      pageController.jumpToPage(state);
+    } else {
+      state++;
+      pageController.jumpToPage(state);
+    }
+  }
+
+  //on skip button click go to the last page
+  void onSkip() {
+    state = 2;
+    pageController.jumpToPage(2);
+  }
 }
