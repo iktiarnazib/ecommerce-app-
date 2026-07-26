@@ -17,10 +17,20 @@ class OnboardingPage extends StatelessWidget {
           //Horzontal scrollable page
           PageView(
             children: [
-              OnboardingPage1(
+              OnboardingScreen(
                 image: TLottieString.phoneShopping,
                 title: TText.onBoardingTitle1,
                 subtitle: TText.onBoardingSubTitle1,
+              ),
+              OnboardingScreen(
+                image: TLottieString.shoppingCart,
+                title: TText.onBoardingTitle2,
+                subtitle: TText.onBoardingSubTitle2,
+              ),
+              OnboardingScreen(
+                image: TLottieString.shoppingOnline,
+                title: TText.onBoardingTitle3,
+                subtitle: TText.onBoardingSubTitle3,
               ),
             ],
           ),
@@ -36,11 +46,11 @@ class OnboardingPage extends StatelessWidget {
   }
 }
 
-class OnboardingPage1 extends StatelessWidget {
+class OnboardingScreen extends StatelessWidget {
   final String image;
   final String title;
   final String subtitle;
-  const OnboardingPage1({
+  const OnboardingScreen({
     super.key,
     required this.image,
     required this.title,
