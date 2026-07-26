@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/screens/onboarding/controller.onboarding/onboarding_controller.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/circular_next_button.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/dot_indicator.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/onboarding_pages.dart';
@@ -5,17 +6,23 @@ import 'package:ecommerce/features/authentication/screens/onboarding/widgets/onb
 import 'package:ecommerce/utils/constants/lottie_strings.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class Onboarding extends StatelessWidget {
+class Onboarding extends ConsumerWidget {
   const Onboarding({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final controller = ref.watch(onboardingProvider.notifier);
     return Scaffold(
       body: Stack(
         children: [
           //Horzontal scrollable page
           PageView(
+            controller: controller.pageController,
+            onPageChanged: (value) {
+              controller.updatePageIndicator(value);
+            },
             children: [
               OnboardingScreen(
                 image: TLottieString.phoneShopping,

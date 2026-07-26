@@ -31,8 +31,7 @@ class OnboardingNotifier extends StateNotifier<int> {
   //on next page click
   void nextPage() {
     if (state == 2) {
-      state = 0;
-      pageController.jumpToPage(state);
+      debugPrint("$state");
     } else {
       state++;
       pageController.jumpToPage(state);
