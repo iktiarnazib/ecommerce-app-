@@ -1,28 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-//onboarding index provider
-StateProvider onboardingIndexProvider = StateProvider<int>((ref) => 0);
+final onboardingProvider =
+    StateNotifierProvider.autoDispose<OnboardingNotifier, int>(
+      (ref) => OnboardingNotifier(),
+    );
 
-//onboarding page controller, provides page controller
-//provider is used when it is intended for readonly purposes
-final Provider onboardingPageControllerProvider = Provider<PageController>((
-  ref,
-) {
+class OnboardingNotifier extends StateNotifier<int> {
+  OnboardingNotifier() : super(0);
+
+  @override
+  void dispose() {
+    super.dispose();
+    pageController.dispose();
+  }
+
   final pageController = PageController();
-
-  ref.onDispose(() => pageController.dispose());
-
-  return pageController;
-});
-
-//The function provider
-//providing custom methods
-Provider onboardingControllerProvider = Provider<OnboardingController>(
-  (ref) => OnboardingController(ref),
-);
-
-class OnboardingController {
-  final Ref ref;
-  OnboardingController(this.ref);
 }
