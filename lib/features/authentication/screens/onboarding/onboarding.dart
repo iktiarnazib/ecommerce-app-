@@ -3,9 +3,7 @@ import 'package:ecommerce/features/authentication/screens/onboarding/widgets/dot
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/onboarding_pages.dart';
 import 'package:ecommerce/features/authentication/screens/onboarding/widgets/onboarding_skip_button.dart';
 import 'package:ecommerce/utils/constants/lottie_strings.dart';
-import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
-import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
 class Onboarding extends StatelessWidget {
