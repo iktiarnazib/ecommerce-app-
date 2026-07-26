@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 //entry point on the app
 void main() {
-  //todo stuff
+  //todo stuffG
 
   runApp(ProviderScope(child: const App()));
 }
