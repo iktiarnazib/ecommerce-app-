@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/authentication/screens/onboarding_page.dart';
+import 'package:ecommerce/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,7 +13,7 @@ class App extends ConsumerWidget {
       themeMode: ThemeMode.system,
       theme: TAppTheme.lightTheme,
       darkTheme: TAppTheme.darkTheme,
-      home: const OnboardingPage(),
+      home: const Onboarding(),
     );
   }
 }

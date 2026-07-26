@@ -1,46 +1,13 @@
-import 'package:ecommerce/utils/constants/lottie_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
-import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
-
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          //Horzontal scrollable page
-          PageView(
-            children: [
-              OnboardingPage1(
-                image: TLottieString.phoneShopping,
-                title: TText.onBoardingTitle1,
-                subtitle: TText.onBoardingSubTitle1,
-              ),
-            ],
-          ),
-
-          //Skip button
-
-          //Dot navigation indicator
-
-          //Circular button
-        ],
-      ),
-    );
-  }
-}
-
-class OnboardingPage1 extends StatelessWidget {
+class OnboardingScreen extends StatelessWidget {
   final String image;
   final String title;
   final String subtitle;
-  const OnboardingPage1({
+  const OnboardingScreen({
     super.key,
     required this.image,
     required this.title,
