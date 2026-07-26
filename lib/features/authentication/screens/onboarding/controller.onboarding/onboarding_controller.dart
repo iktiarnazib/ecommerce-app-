@@ -15,3 +15,14 @@ final Provider onboardingPageControllerProvider = Provider<PageController>((
 
   return pageController;
 });
+
+//The function provider
+//providing custom methods
+Provider onboardingControllerProvider = Provider<OnboardingController>(
+  (ref) => OnboardingController(ref),
+);
+
+class OnboardingController {
+  final Ref ref;
+  OnboardingController(this.ref);
+}
