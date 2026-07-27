@@ -1,3 +1,4 @@
+import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/mydivider.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/social_buttons.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_form.dart';
@@ -43,14 +44,9 @@ class _SignupScreenState extends State<SignupScreen> {
                 const SizedBox(height: TSizes.spaceBtwSections),
 
                 //*Signup Button
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text(TText.createAccount),
-                  ),
-                ),
+                TSignButton(text: TText.createAccount),
                 const SizedBox(height: TSizes.spaceBtwSections),
+
                 //*Divider
                 TDivider(dark: dark, text: TText.orSignUpWith),
                 const SizedBox(height: TSizes.spaceBtwSections),

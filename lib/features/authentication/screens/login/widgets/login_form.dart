@@ -1,3 +1,4 @@
+import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
@@ -51,13 +52,7 @@ class TLoginForm extends StatelessWidget {
               ],
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton(
-                onPressed: () {},
-                child: Text(TText.signIn),
-              ),
-            ),
+            const TSignButton(text: TText.signIn),
             const SizedBox(height: TSizes.spaceBtwItems),
             SizedBox(
               width: double.infinity,
