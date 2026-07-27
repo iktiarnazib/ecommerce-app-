@@ -4,6 +4,7 @@ import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -42,9 +43,19 @@ class LoginScreen extends StatelessWidget {
                 ),
               ],
             ),
-            //TITLE
-
-            //SUBTITLE
+            //* form (different column)
+            Form(
+              child: Column(
+                children: [
+                  //* email
+                  TextFormField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Iconsax.direct_right),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
