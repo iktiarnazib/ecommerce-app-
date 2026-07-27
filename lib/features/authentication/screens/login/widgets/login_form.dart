@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/cupertino.dart';
@@ -61,7 +62,16 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return SignupScreen();
+                      },
+                    ),
+                  );
+                },
                 child: Text(TText.createAccount),
               ),
             ),
