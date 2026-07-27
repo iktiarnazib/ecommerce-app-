@@ -2,7 +2,6 @@ import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_butto
 import 'package:ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -25,6 +24,7 @@ class TLoginForm extends StatelessWidget {
             ),
             SizedBox(height: TSizes.spaceBtwInputFields),
             TextFormField(
+              obscureText: true,
               decoration: InputDecoration(
                 prefixIcon: Icon(Iconsax.password_check),
                 labelText: TText.password,

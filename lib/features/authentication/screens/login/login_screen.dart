@@ -22,7 +22,7 @@ class LoginScreen extends StatelessWidget {
             //*logo, title, subtitle
             TLoginHeader(dark: dark),
             //* form (different column)
-            TLoginForm(),
+            const TLoginForm(),
 
             //*or sign in with
             TDivider(dark: dark, text: TText.orSignInWith),
@@ -30,7 +30,7 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(height: TSizes.spaceBtwSections),
 
             //logo of facebook and google
-            TSocialButton(),
+            const TSocialButton(),
           ],
         ),
       ),
