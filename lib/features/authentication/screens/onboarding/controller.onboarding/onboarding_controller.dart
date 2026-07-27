@@ -33,13 +33,14 @@ class OnboardingNotifier extends StateNotifier<int> {
   //on next page click
   void nextPage(BuildContext context) {
     if (state == 2) {
-      Navigator.push(
+      Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(
           builder: (context) {
             return LoginScreen();
           },
         ),
+        (route) => false,
       );
     } else {
       state++;
