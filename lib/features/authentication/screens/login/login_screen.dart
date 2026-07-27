@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/styles/spacing_style.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
@@ -112,16 +113,31 @@ class LoginScreen extends StatelessWidget {
             ),
 
             //*or sign in with
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Expanded(child: Divider()),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: TSizes.sm),
-                  child: Text(TText.orSignInWith),
-                ),
-                Expanded(child: Divider()),
-              ],
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: TSizes.spaceBtwSections,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Divider(
+                      color: dark ? TColors.darkGrey : TColors.grey,
+                      thickness: 0.5,
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: TSizes.sm),
+                    child: Text(TText.orSignInWith),
+                  ),
+                  Expanded(
+                    child: Divider(
+                      color: dark ? TColors.darkGrey : TColors.grey,
+                      thickness: 0.5,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
