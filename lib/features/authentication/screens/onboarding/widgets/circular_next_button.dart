@@ -23,7 +23,7 @@ class CircularButton extends ConsumerWidget {
           backgroundColor: dark ? TColors.primary : Colors.black,
         ),
         onPressed: () {
-          controller.nextPage();
+          controller.nextPage(context);
         },
         child: Icon(Icons.arrow_forward),
       ),
