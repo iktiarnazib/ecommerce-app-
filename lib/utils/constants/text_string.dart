@@ -36,6 +36,7 @@ class TText {
   static const String orSignUpWith = "Or Sign Up With";
   static const String iAgreeTo = "I agree to";
   static const String privacyPolicy = "Privacy Policy";
+  static const String and = "and";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
