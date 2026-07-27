@@ -1,4 +1,6 @@
+import 'package:ecommerce/features/authentication/screens/login/login_screen.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final onboardingProvider =
@@ -29,9 +31,16 @@ class OnboardingNotifier extends StateNotifier<int> {
   }
 
   //on next page click
-  void nextPage() {
+  void nextPage(BuildContext context) {
     if (state == 2) {
-      debugPrint("$state");
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return LoginScreen();
+          },
+        ),
+      );
     } else {
       state++;
       pageController.jumpToPage(state);
