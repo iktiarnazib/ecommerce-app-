@@ -105,9 +105,23 @@ class LoginScreen extends StatelessWidget {
                         child: Text(TText.createAccount),
                       ),
                     ),
+                    const SizedBox(height: TSizes.spaceBtwSections),
                   ],
                 ),
               ),
+            ),
+
+            //*or sign in with
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Expanded(child: Divider()),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: TSizes.sm),
+                  child: Text(TText.orSignInWith),
+                ),
+                Expanded(child: Divider()),
+              ],
             ),
           ],
         ),
