@@ -4,9 +4,9 @@ import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 
 class TDivider extends StatelessWidget {
-  const TDivider({super.key, required this.dark});
-
   final bool dark;
+  final String text;
+  const TDivider({super.key, required this.dark, required this.text});
 
   @override
   Widget build(BuildContext context) {
