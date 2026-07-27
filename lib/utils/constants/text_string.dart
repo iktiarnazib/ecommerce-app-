@@ -14,4 +14,9 @@ class TText {
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Taimoon Sikander";
+
+  // -- Login
+  static const String loginTitle = "Welcome Back";
+  static const String loginSubTitle =
+      "Sign in to continue shopping and discover amazing deals made just for you.";
 }
