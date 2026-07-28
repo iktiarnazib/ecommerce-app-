@@ -1,6 +1,6 @@
 import 'package:ecommerce/common/styles/spacing_style.dart';
-import 'package:ecommerce/features/authentication/screens/login/widgets/login_form.dart';
-import 'package:ecommerce/features/authentication/screens/login/widgets/login_header.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/login/widgets/login_form.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/login/widgets/login_header.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/mydivider.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/social_buttons.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';

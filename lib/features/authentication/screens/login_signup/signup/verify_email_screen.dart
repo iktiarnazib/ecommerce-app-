@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/success_screen.dart';
 import 'package:ecommerce/utils/constants/lottie_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
@@ -9,6 +10,9 @@ import 'package:lottie/lottie.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key});
+  void onContinueClick(BuildContext context) {
+    THelperFunctions.navigateToScreen(context, SuccessScreen());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +37,7 @@ class VerifyEmailScreen extends StatelessWidget {
               TLottieString.emailVerify,
               repeat: false,
               width: THelperFunctions.screenWidth(context) * 0.6,
+              height: THelperFunctions.screenHeight(context) * 0.3,
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
             //*TITLE & SUBTITLE
@@ -56,7 +61,37 @@ class VerifyEmailScreen extends StatelessWidget {
 
             const SizedBox(height: TSizes.spaceBtwSections),
             //*BUTTONS
-            TSignButton(text: 'Continue', onTap: () {}),
+            TSignButton(
+              text: 'Continue',
+              onTap: () {
+                onContinueClick(context);
+              },
+            ),
+            const SizedBox(height: TSizes.spaceBtwItems),
+            SizedBox(
+              width: double.infinity,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  elevation: 0,
+                  foregroundColor: Colors.white,
+
+                  disabledForegroundColor: Colors.grey,
+                  disabledBackgroundColor: Colors.grey,
+
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                onPressed: () {},
+                child: Text(TText.resendEmail),
+              ),
+            ),
           ],
         ),
       ),
