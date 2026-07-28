@@ -43,10 +43,17 @@ class VerifyEmailScreen extends StatelessWidget {
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
             Text(
+              "Iktiarnazib@gmail.com",
+              style: Theme.of(context).textTheme.labelLarge,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: TSizes.spaceBtwItems),
+            Text(
               TText.confirmEmailSubTitle,
               style: Theme.of(context).textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
+
             const SizedBox(height: TSizes.spaceBtwSections),
             //*BUTTONS
             TSignButton(text: 'Continue', onTap: () {}),
