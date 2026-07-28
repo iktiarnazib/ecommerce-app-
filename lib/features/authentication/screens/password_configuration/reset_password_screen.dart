@@ -1,3 +1,4 @@
+import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
@@ -7,10 +8,13 @@ class ResetPasswordScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: ListView(children: [
-        
-      ],
-    ),
+      body: Padding(
+        padding: const EdgeInsets.all(TSizes.defaultSpace),
+        child: ListView(children: [
+          
+        ],
+            ),
+      ),
     );
   }
 }
