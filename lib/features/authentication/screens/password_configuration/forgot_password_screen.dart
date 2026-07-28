@@ -15,7 +15,15 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(TSizes.defaultSpace),
-        child: ListView(children: []),
+        child: ListView(
+          children: [
+            //*Heading
+
+            //*Textfield
+
+            //*Submit Button
+          ],
+        ),
       ),
     );
   }
