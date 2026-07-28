@@ -1,6 +1,7 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/mydivider.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/social_buttons.dart';
+import 'package:ecommerce/features/authentication/screens/signup/verify_email_screen.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_form.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/terms_and_condition_checkbox.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -16,6 +17,10 @@ class SignupScreen extends StatefulWidget {
 }
 
 class _SignupScreenState extends State<SignupScreen> {
+  void onCreateAccountTap() {
+    THelperFunctions.navigateToScreen(context, VerifyEmailScreen());
+  }
+
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
@@ -44,7 +49,12 @@ class _SignupScreenState extends State<SignupScreen> {
                 const SizedBox(height: TSizes.spaceBtwSections),
 
                 //*Signup Button
-                TSignButton(text: TText.createAccount),
+                TSignButton(
+                  text: TText.createAccount,
+                  onTap: () {
+                    onCreateAccountTap();
+                  },
+                ),
                 const SizedBox(height: TSizes.spaceBtwSections),
 
                 //*Divider

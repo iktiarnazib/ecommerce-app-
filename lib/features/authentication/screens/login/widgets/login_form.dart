@@ -2,11 +2,16 @@ import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_butto
 import 'package:ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
+import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({super.key});
+
+  void onSignInTap(BuildContext context) {
+    THelperFunctions.navigateToScreen(context, SignupScreen());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +57,12 @@ class TLoginForm extends StatelessWidget {
               ],
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
-            const TSignButton(text: TText.signIn),
+            TSignButton(
+              text: TText.signIn,
+              onTap: () {
+                onSignInTap(context);
+              },
+            ),
             const SizedBox(height: TSizes.spaceBtwItems),
             SizedBox(
               width: double.infinity,
