@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/authentication/screens/login/login_screen.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/login/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

@@ -1,9 +1,9 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/mydivider.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/social_buttons.dart';
-import 'package:ecommerce/features/authentication/screens/signup/verify_email_screen.dart';
-import 'package:ecommerce/features/authentication/screens/signup/widgets/signup_form.dart';
-import 'package:ecommerce/features/authentication/screens/signup/widgets/terms_and_condition_checkbox.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/signup/verify_email_screen.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/signup/widgets/signup_form.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/signup/widgets/terms_and_condition_checkbox.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';

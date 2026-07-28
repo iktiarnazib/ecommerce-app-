@@ -1,5 +1,5 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
-import 'package:ecommerce/features/authentication/screens/signup/signup_screen.dart';
+import 'package:ecommerce/features/authentication/screens/login_signup/signup/signup_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
