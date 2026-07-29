@@ -1,6 +1,7 @@
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   const ForgotPasswordScreen({super.key});
@@ -20,7 +21,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           children: [
             //*Heading
             Text(
-              TText.forgetPassword,
+              TText.forgetPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: TSizes.defaultSpace),
@@ -31,6 +32,12 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             const SizedBox(height: TSizes.spaceBtwSections * 2),
 
             //*Textfield
+            TextFormField(
+              decoration: const InputDecoration(
+                labelText: TText.email,
+                prefixIcon: Icon(Iconsax.direct_right),
+              ),
+            ),
 
             //*Submit Button
           ],
