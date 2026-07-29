@@ -1,6 +1,7 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/features/authentication/screens/login_signup/signup/signup_screen.dart';
 import 'package:ecommerce/features/authentication/screens/password_configuration/forgot_password_screen.dart';
+import 'package:ecommerce/navigation_menu.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -11,7 +12,7 @@ class TLoginForm extends StatelessWidget {
   const TLoginForm({super.key});
 
   void onSignInTap(BuildContext context) {
-    THelperFunctions.navigateToScreen(context, SignupScreen());
+    THelperFunctions.navigateToScreen(context, NavigationMenu());
   }
 
   void onForgotPassword(BuildContext context) {
