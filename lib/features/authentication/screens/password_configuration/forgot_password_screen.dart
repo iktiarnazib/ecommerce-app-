@@ -1,6 +1,8 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
+import 'package:ecommerce/features/authentication/screens/password_configuration/reset_password_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
+import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -12,6 +14,10 @@ class ForgotPasswordScreen extends StatefulWidget {
 }
 
 class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
+  void onForgotScreenSubmit() {
+    THelperFunctions.navigateToScreen(context, ResetPasswordScreen());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +48,12 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             const SizedBox(height: TSizes.spaceBtwSections),
 
             //*Submit Button
-            TSignButton(text: TText.submit, onTap: () {}),
+            TSignButton(
+              text: TText.submit,
+              onTap: () {
+                onForgotScreenSubmit();
+              },
+            ),
           ],
         ),
       ),
