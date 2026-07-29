@@ -4,4 +4,5 @@ class TLottieString {
   static const String shoppingOnline = "assets/lotties/shopping_cart.json";
   static const String emailVerify = "assets/lotties/email.json";
   static const String successScreen = "assets/lotties/success_screen.json";
+  static const String emailSentVerify = "assets/lotties/email_sent.json";
 }
