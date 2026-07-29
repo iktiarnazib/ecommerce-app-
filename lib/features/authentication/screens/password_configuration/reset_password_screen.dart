@@ -1,4 +1,3 @@
-import 'package:ecommerce/common/styles/spacing_style.dart';
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/utils/constants/lottie_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -17,41 +16,47 @@ class ResetPasswordScreen extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: Icon(CupertinoIcons.clear),
+          Padding(
+            padding: const EdgeInsets.only(right: 10.0),
+            child: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: Icon(CupertinoIcons.clear),
+            ),
           ),
         ],
       ),
       body: Padding(
-        padding: TSpacingStyle.paddingWithAppbarHeight * 2,
+        padding: EdgeInsets.all(TSizes.defaultSpace),
         child: ListView(
           children: [
             //*Image with 60% of the screen width
             Lottie.asset(
-              TLottieString.emailSentVerify,
-              width: THelperFunctions.screenWidth(context) * 0.6,
+              TLottieString.successScreen,
+              width: THelperFunctions.screenWidth(context) * 0.9,
+              height: THelperFunctions.screenHeight(context) * 0.3,
+              repeat: false,
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
 
             //*Title & Subtitle
             Text(
-              TText.loginTitle,
+              TText.changeYourPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
+
             Text(
-              TText.loginSubTitle,
+              TText.changeYourPasswordSubTitle,
               style: Theme.of(context).textTheme.bodyMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
 
             //*Button
-            TSignButton(text: TText.tContinue, onTap: () {}),
+            TSignButton(text: TText.done, onTap: () {}),
           ],
         ),
       ),
