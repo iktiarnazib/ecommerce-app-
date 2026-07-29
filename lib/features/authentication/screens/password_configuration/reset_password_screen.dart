@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
+import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_text_buttom.dart';
 import 'package:ecommerce/utils/constants/lottie_strings.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
@@ -57,6 +58,8 @@ class ResetPasswordScreen extends StatelessWidget {
 
             //*Button
             TSignButton(text: TText.done, onTap: () {}),
+            const SizedBox(height: TSizes.spaceBtwItems),
+            TTextButton(text: TText.resendEmail, onTap: () {}),
           ],
         ),
       ),
