@@ -1,4 +1,6 @@
 import 'package:ecommerce/navigation_provider.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
+import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:iconsax/iconsax.dart';
@@ -9,9 +11,8 @@ class NavigationMenu extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final selectedIndex = ref.watch(selectedIndexProvider);
+    final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      appBar: AppBar(),
-
       bottomNavigationBar: NavigationBar(
         height: 80,
         elevation: 0,
@@ -20,6 +21,11 @@ class NavigationMenu extends ConsumerWidget {
           ref.read(selectedIndexProvider.notifier).state = index;
           debugPrint("Selected Index: $selectedIndex");
         },
+        backgroundColor: dark ? TColors.black : Colors.white,
+        indicatorColor: dark
+            ? Colors.white.withAlpha(26)
+            : TColors.black.withAlpha(26),
+
         destinations: [
           NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
           NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
@@ -27,7 +33,7 @@ class NavigationMenu extends ConsumerWidget {
           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
         ],
       ),
-      body: Container(),
+      body: screens.elementAt(selectedIndex),
     );
   }
 }
