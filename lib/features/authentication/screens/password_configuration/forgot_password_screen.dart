@@ -1,3 +1,4 @@
+import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
@@ -38,8 +39,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 prefixIcon: Icon(Iconsax.direct_right),
               ),
             ),
+            const SizedBox(height: TSizes.spaceBtwSections),
 
             //*Submit Button
+            TSignButton(text: 'Send', onTap: () {}),
           ],
         ),
       ),
