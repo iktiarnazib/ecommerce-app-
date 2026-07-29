@@ -8,8 +8,12 @@ class NavigationMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(children: [Text('data')]),
+
       bottomNavigationBar: NavigationBar(
+        height: 80,
+        elevation: 0,
+        selectedIndex: 1,
+        onDestinationSelected: (index) {},
         destinations: [
           NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
           NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),
@@ -17,6 +21,7 @@ class NavigationMenu extends StatelessWidget {
           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
         ],
       ),
+      body: Container(),
     );
   }
 }
