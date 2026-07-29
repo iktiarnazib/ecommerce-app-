@@ -42,7 +42,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             const SizedBox(height: TSizes.spaceBtwSections),
 
             //*Submit Button
-            TSignButton(text: 'Send', onTap: () {}),
+            TSignButton(text: TText.submit, onTap: () {}),
           ],
         ),
       ),
