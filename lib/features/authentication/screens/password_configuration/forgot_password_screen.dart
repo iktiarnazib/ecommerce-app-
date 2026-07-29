@@ -1,4 +1,5 @@
 import 'package:ecommerce/utils/constants/sizes.dart';
+import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
@@ -18,6 +19,16 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         child: ListView(
           children: [
             //*Heading
+            Text(
+              TText.forgetPassword,
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: TSizes.defaultSpace),
+            Text(
+              TText.forgetPasswordSubTitle,
+              style: Theme.of(context).textTheme.labelMedium,
+            ),
+            const SizedBox(height: TSizes.spaceBtwSections * 2),
 
             //*Textfield
 
