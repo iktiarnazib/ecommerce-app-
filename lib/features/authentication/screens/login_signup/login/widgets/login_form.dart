@@ -1,5 +1,6 @@
 import 'package:ecommerce/common/widgets/widgets.login_signup.dart/my_sign_button.dart';
 import 'package:ecommerce/features/authentication/screens/login_signup/signup/signup_screen.dart';
+import 'package:ecommerce/features/authentication/screens/password_configuration/forgot_password_screen.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -11,6 +12,10 @@ class TLoginForm extends StatelessWidget {
 
   void onSignInTap(BuildContext context) {
     THelperFunctions.navigateToScreen(context, SignupScreen());
+  }
+
+  void onForgotPassword(BuildContext context) {
+    THelperFunctions.navigateToScreen(context, ForgotPasswordScreen());
   }
 
   @override
@@ -53,7 +58,12 @@ class TLoginForm extends StatelessWidget {
                 ),
 
                 //* forgot password
-                TextButton(onPressed: () {}, child: Text(TText.forgetPassword)),
+                TextButton(
+                  onPressed: () {
+                    onForgotPassword(context);
+                  },
+                  child: Text(TText.forgetPassword),
+                ),
               ],
             ),
             const SizedBox(height: TSizes.spaceBtwItems),
