@@ -51,7 +51,7 @@ class SuccessScreen extends StatelessWidget {
 
             const SizedBox(height: TSizes.spaceBtwSections),
             //*BUTTONS
-            TSignButton(text: 'Continue', onTap: () {}),
+            TSignButton(text: TText.tContinue, onTap: () {}),
           ],
         ),
       ),
