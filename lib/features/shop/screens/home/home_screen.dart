@@ -16,7 +16,13 @@ class HomeScreen extends StatelessWidget {
               Container(
                 color: TColors.primary,
                 padding: EdgeInsets.all(0),
-                child: Stack(children: [TCircularContainer()]),
+                child: Stack(
+                  children: [
+                    TCircularContainer(
+                      backgroundColor: TColors.white.withAlpha(25),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
