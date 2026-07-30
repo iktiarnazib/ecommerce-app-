@@ -10,26 +10,26 @@ class TCircularContainer extends StatelessWidget {
   final Color backgroundColor;
   const TCircularContainer({
     super.key,
-    required this.width,
-    required this.height,
-    required this.radius,
-    required this.padding,
-    required this.child,
-    required this.backgroundColor,
+    this.width = 400,
+    this.height = 400,
+    this.radius = 400,
+    this.padding = 0,
+    this.child,
+    this.backgroundColor = TColors.white,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
-      width: 400,
-      padding: const EdgeInsets.all(20),
+      height: height,
+      width: width,
+      padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(400),
-        color: TColors.textWhite.withAlpha(
-          25,
-        ), //10% almost, it stores total 8 bit binary for color, which is max 255 steps
+        borderRadius: BorderRadius.circular(radius),
+        color:
+            backgroundColor, //10% almost, it stores  total 8 bit binary for color, which is max 255 steps
       ),
+      child: child,
     );
   }
 }
