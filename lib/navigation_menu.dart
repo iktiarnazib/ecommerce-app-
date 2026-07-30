@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/shop/screens/home/home_screen.dart';
 import 'package:ecommerce/navigation_provider.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -33,7 +34,7 @@ class NavigationMenu extends ConsumerWidget {
           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
         ],
       ),
-      body: screens.elementAt(selectedIndex),
+      body: HomeScreen(),
     );
   }
 }
