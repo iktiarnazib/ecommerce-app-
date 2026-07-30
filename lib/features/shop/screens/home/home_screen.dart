@@ -7,46 +7,43 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
+    return SingleChildScrollView(
+      child: Column(
         children: [
-          Column(
-            children: [
-              Container(
-                color: TColors.primary,
-                padding: EdgeInsets.all(0),
-                child: SizedBox(
-                  height: 400,
-                  child: Stack(
+          Container(
+            width: double.infinity,
+            color: TColors.primary,
+            padding: EdgeInsets.all(0),
+            child: SizedBox(
+              height: 400,
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: -150,
+                    right: -250,
+                    child: TCircularContainer(
+                      backgroundColor: TColors.white.withAlpha(25),
+                    ),
+                  ),
+                  Positioned(
+                    top: 150,
+                    right: -300,
+                    child: TCircularContainer(
+                      backgroundColor: TColors.white.withAlpha(25),
+                    ),
+                  ),
+                  Column(
                     children: [
-                      Positioned(
-                        top: -150,
-                        right: -250,
-                        child: TCircularContainer(
-                          backgroundColor: TColors.white.withAlpha(25),
-                        ),
-                      ),
-                      Positioned(
-                        height: 150,
-                        width: -300,
-                        child: TCircularContainer(
-                          backgroundColor: TColors.white.withAlpha(25),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          //appbar
+                      //appbar
+                      Text('data'),
+                      //search bar
 
-                          //search bar
-
-                          //catagories
-                        ],
-                      ),
+                      //catagories
                     ],
                   ),
-                ),
+                ],
               ),
-            ],
+            ),
           ),
         ],
       ),
