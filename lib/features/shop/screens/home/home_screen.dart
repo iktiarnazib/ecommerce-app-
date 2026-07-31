@@ -1,13 +1,10 @@
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:ecommerce/common/widgets/image_text_widget/TVerticalImageText.dart';
-import 'package:ecommerce/common/widgets/section_heading/section_heading.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
+import 'package:ecommerce/features/shop/screens/home/widgets/home_catagories.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
-import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -35,7 +32,11 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: TSizes.spaceBtwSections),
 
                 //*Catagories
-                TVerticalImageText(image: TImage.cSports, title: 'Title'),
+                THomeCatagories(
+                  image: TImage.cSports,
+                  title: 'Title',
+                  backgroundColor: null,
+                ),
               ],
             ),
           ),
