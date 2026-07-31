@@ -1,5 +1,4 @@
 import 'package:ecommerce/utils/constants/colors.dart';
-import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
 class TSectionHeading extends StatelessWidget {
@@ -21,31 +20,28 @@ class TSectionHeading extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                title,
-                style: Theme.of(
-                  context,
-                ).textTheme.headlineSmall!.apply(color: textColor),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
-              if (showActionButton)
-                TextButton(
-                  onPressed: onPressed,
-                  child: Text(
-                    buttonTitle,
-                    style: Theme.of(
-                      context,
-                    ).textTheme.labelSmall!.apply(color: textColor),
-                  ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              title,
+              style: Theme.of(
+                context,
+              ).textTheme.headlineSmall!.apply(color: textColor),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+            if (showActionButton)
+              TextButton(
+                onPressed: onPressed,
+                child: Text(
+                  buttonTitle,
+                  style: Theme.of(
+                    context,
+                  ).textTheme.labelSmall!.apply(color: textColor),
                 ),
-            ],
-          ),
+              ),
+          ],
         ),
       ],
     );

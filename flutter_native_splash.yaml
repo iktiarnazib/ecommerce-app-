@@ -10,8 +10,8 @@ flutter_native_splash:
   # color_web: "#42a5f5"
   #color_dark_web: "#042a49"
 
-  image:                assets/logos/light_screen_logo.png
-  image_dark:          assets/logos/dark_screen_logo.png 
+  image:                assets/images/brand_logos/light_screen_logo.png
+  image_dark:          assets/images/brand_logos/dark_screen_logo.png 
 
 
   # branding position:
@@ -37,8 +37,8 @@ flutter_native_splash:
     # with background: 960×960 px (fit within circle 640px in diameter)    
     # without background: 1152×1152 px (fit within circle 768px in diameter)
     # ensure that the most important design elements of your image are placed within a circular area 
-    image: assets/logos/light_screen_logo.png 
-    image_dark: assets/logos/dark_screen_logo.png
+    image: assets/images/brand_logos/light_screen_logo.png
+    image_dark: assets/images/brand_logos/dark_screen_logo.png 
 
     # center-logo background color
     icon_background_color: "#000000"
