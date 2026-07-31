@@ -1,3 +1,4 @@
+import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,9 @@ class TAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+    );
   }
 
   @override
