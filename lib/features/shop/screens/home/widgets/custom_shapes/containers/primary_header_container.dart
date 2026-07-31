@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/shop/screens/home/circular_container.dart';
+import 'package:ecommerce/features/shop/screens/home/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
@@ -32,15 +32,7 @@ class TPrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: TColors.white.withAlpha(25),
                 ),
               ),
-              Column(
-                children: [
-                  //appbar
-                  Text('data'),
-                  //search bar
-
-                  //catagories
-                ],
-              ),
+              child,
             ],
           ),
         ),

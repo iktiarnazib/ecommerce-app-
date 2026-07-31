@@ -9,6 +9,6 @@ void main() {
   runApp(ProviderScope(child: const App()));
 }
 
-//mytodo listv5:
-//continue =>https://www.youtube.com/watch?v=VTTsDELY94g&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=12(minute: 07:26)
+//mytodo listv6:
+//continue => https://www.youtube.com/watch?v=uD_ju_cwXK0 (minute: 07:26)
 //shoot gig video for fiverr
