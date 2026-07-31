@@ -74,6 +74,8 @@ flutter:
     - assets/images/app_logos/
     - assets/images/brand_logos/
     - assets/images/catagories/
+    - assets/lotties/
+    - assets/icons/
 
   #fonts
   fonts:

@@ -6,8 +6,8 @@ class TImage {
       "assets/icons/t-store-splash-logo-light.png";
 
   // -- Social Logos
-  static const String google = "assets/images/google-logo.png";
-  static const String facebook = "assets/images/facebook-logo.png";
+  static const String google = "assets/images/app_logos/google-logo.png";
+  static const String facebook = "assets/images/app_logos/facebook-logo.png";
 
   //app catagories logos
   static const String cSports = "assets/images/catagories/sports.png";
