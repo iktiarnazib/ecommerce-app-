@@ -28,6 +28,7 @@ class HomeScreen extends StatelessWidget {
                 TSearchBar(
                   icon: Iconsax.search_normal,
                   text: TText.searchForItems,
+                  onTap: () {},
                 ),
                 const SizedBox(height: TSizes.spaceBtwSections),
 

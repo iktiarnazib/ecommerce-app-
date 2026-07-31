@@ -8,36 +8,41 @@ class TSearchBar extends StatelessWidget {
   final bool showBackground, showBorder;
   final String text;
   final IconData? icon;
+  final Function()? onTap;
   const TSearchBar({
     super.key,
     this.showBackground = true,
     this.showBorder = true,
     required this.text,
     this.icon,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
-      width: TDeviceUtility.getScreenWidth(context),
-      padding: const EdgeInsets.all(TSizes.md),
-      decoration: BoxDecoration(
-        color: showBackground
-            ? dark
-                  ? TColors.dark
-                  : TColors.white
-            : Colors.transparent,
-        borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
-        border: showBorder ? Border.all(color: TColors.grey) : null,
-      ),
-      child: Row(
-        children: [
-          Icon(icon, color: dark ? TColors.white : TColors.darkGrey),
-          const SizedBox(width: TSizes.spaceBtwItems),
-          Text(text, style: Theme.of(context).textTheme.bodyMedium!),
-        ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+        width: TDeviceUtility.getScreenWidth(context),
+        padding: const EdgeInsets.all(TSizes.md),
+        decoration: BoxDecoration(
+          color: showBackground
+              ? dark
+                    ? TColors.dark
+                    : TColors.white
+              : Colors.transparent,
+          borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
+          border: showBorder ? Border.all(color: TColors.grey) : null,
+        ),
+        child: Row(
+          children: [
+            Icon(icon, color: dark ? TColors.white : TColors.darkGrey),
+            const SizedBox(width: TSizes.spaceBtwItems),
+            Text(text, style: Theme.of(context).textTheme.bodyMedium!),
+          ],
+        ),
       ),
     );
   }
