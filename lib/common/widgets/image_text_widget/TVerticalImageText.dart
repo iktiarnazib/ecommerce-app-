@@ -20,38 +20,37 @@ class TVerticalImageText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
-    return Padding(
-      padding: const EdgeInsets.only(right: TSizes.defaultSpace),
-      child: Column(
-        children: [
-          Container(
-            height: 56,
-            width: 56,
-            padding: EdgeInsets.only(left: TSizes.sm),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: backgroundColor ?? (dark ? TColors.dark : TColors.white),
-            ),
-            child: Image(
-              image: AssetImage(image),
-              fit: BoxFit.contain,
-              color: TColors.black,
-            ),
+    return Column(
+      children: [
+        Container(
+          margin: EdgeInsets.only(right: TSizes.spaceBtwItems),
+          height: 56,
+          width: 56,
+          padding: EdgeInsets.only(left: TSizes.sm),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: backgroundColor ?? (dark ? TColors.dark : TColors.white),
           ),
-          const SizedBox(height: TSizes.spaceBtwItems / 2),
-          SizedBox(
-            width: 55,
-            child: Text(
-              title,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.labelMedium!.apply(
-                color: dark ? TColors.white : TColors.black,
-              ),
-            ),
+          child: Image(
+            image: AssetImage(image),
+            fit: BoxFit.cover,
+            color: TColors.black,
           ),
-        ],
-      ),
+        ),
+        const SizedBox(height: TSizes.spaceBtwItems / 2),
+        SizedBox(
+          width: 55,
+          child: Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: Theme.of(context).textTheme.labelMedium!.apply(
+              color: dark ? TColors.white : TColors.black,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ],
     );
   }
 }

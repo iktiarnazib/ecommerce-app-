@@ -24,6 +24,7 @@ class HomeScreen extends StatelessWidget {
 
                 //*space between sections
                 const SizedBox(height: TSizes.spaceBtwSections),
+
                 //*Search Bar
                 TSearchBar(
                   icon: Iconsax.search_normal,
@@ -34,8 +35,8 @@ class HomeScreen extends StatelessWidget {
 
                 //*Catagories
                 THomeCatagories(
-                  image: TImage.cSports,
-                  title: 'Title',
+                  image: TImage.cElectronics,
+                  title: 'Electronics',
                   backgroundColor: null,
                 ),
               ],
