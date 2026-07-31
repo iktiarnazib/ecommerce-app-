@@ -1,14 +1,43 @@
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class TAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const TAppBar({super.key});
+  final Widget? title;
+  final bool showBackArrow;
+  final IconData? leadingIcon;
+  final List<Widget>? actions;
+  final VoidCallback? leadingOnPressed;
+
+  const TAppBar({
+    super.key,
+    this.title,
+    required this.showBackArrow,
+    this.leadingIcon,
+    this.actions,
+    this.leadingOnPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+      padding: EdgeInsets.symmetric(horizontal: TSizes.md),
+      child: AppBar(
+        automaticallyImplyLeading: false,
+        leading: showBackArrow
+            ? IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Icon(Iconsax.arrow),
+              )
+            : leadingIcon != null
+            ? IconButton(onPressed: leadingOnPressed, icon: Icon(leadingIcon))
+            : null,
+        title: title,
+        actions: actions,
+      ),
     );
   }
 
