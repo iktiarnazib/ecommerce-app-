@@ -34,7 +34,7 @@ class NavigationMenu extends ConsumerWidget {
           NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
         ],
       ),
-      body: HomeScreen(),
+      body: const HomeScreen(),
     );
   }
 }
