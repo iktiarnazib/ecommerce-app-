@@ -10,7 +10,18 @@ class HomeScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          TPrimaryHeaderContainer(child: Column(children: [THomeAppbar()])),
+          TPrimaryHeaderContainer(
+            child: Column(
+              children: [
+                //*Appbar
+                THomeAppbar(),
+              ],
+            ),
+          ),
+
+          //*Search Bar
+
+          //*Catagories
         ],
       ),
     );
