@@ -8,4 +8,15 @@ class TImage {
   // -- Social Logos
   static const String google = "assets/images/google-logo.png";
   static const String facebook = "assets/images/facebook-logo.png";
+
+  //app catagories logos
+  static const String cSports = "assets/images/catagories/sports.png";
+  static const String cClothing = "assets/images/catagories/clothing.png";
+  static const String cCosmetics = "assets/images/catagories/cosmetics.png";
+  static const String cElectronics = "assets/images/catagories/electronics.png";
+  static const String cFurniture = "assets/images/catagories/furniture.png";
+  static const String cJewellary = "assets/images/catagories/jewellary.png";
+  static const String cPets = "assets/images/catagories/pets.png";
+  static const String cShoes = "assets/images/catagories/shoes.png";
+  static const String cToys = "assets/images/catagories/toys.png";
 }
