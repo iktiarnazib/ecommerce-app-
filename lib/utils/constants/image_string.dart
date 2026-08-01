@@ -21,7 +21,7 @@ class TImage {
   static const String cToys = "assets/images/catagories/toys.png";
 
   //*Banners
-  static const String shoppingBanner1 = "assets/images/banners/shopping1.png";
-  static const String shoppingBanner2 = "assets/images/banners/shopping2.png";
-  static const String shoppingBanner3 = "assets/images/banners/shopping3.png";
+  static const String promoBanner1 = "assets/images/banners/shopping1.png";
+  static const String promoBanner2 = "assets/images/banners/shopping2.png";
+  static const String promoBanner3 = "assets/images/banners/shopping3.png";
 }
