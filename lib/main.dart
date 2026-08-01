@@ -10,5 +10,5 @@ void main() {
 }
 
 //* mytodo listv9:
-//* continue => https://www.youtube.com/watch?v=hkExmbmsCvQ&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=15 (minute: 27:26)
+//* continue => https://www.youtube.com/watch?v=hkExmbmsCvQ&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=15 (minute: 03:28)
 //* shoot gig video for fiverr
