@@ -3,6 +3,7 @@ import 'package:ecommerce/common/widgets/section_heading/section_heading.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
+import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class THomeCatagories extends StatelessWidget {
@@ -38,7 +39,7 @@ class THomeCatagories extends StatelessWidget {
               itemCount: 9,
               itemBuilder: (BuildContext context, int index) {
                 return TVerticalImageText(
-                  backgroundColor: backgroundColor,
+                  backgroundColor: TColors.white,
                   image: image,
                   title: title,
                 );

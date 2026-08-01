@@ -76,6 +76,7 @@ flutter:
     - assets/images/catagories/
     - assets/lotties/
     - assets/icons/
+    - assets/images/banners/
 
   #fonts
   fonts:
