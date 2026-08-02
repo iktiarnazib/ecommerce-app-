@@ -1,9 +1,11 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_catagories.dart';
+import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
@@ -58,7 +60,18 @@ class HomeScreen extends StatelessWidget {
                   ],
                   options: CarouselOptions(viewportFraction: 1),
                 ),
-                const SizedBox(height: TSizes.spaceBtwSections),
+                const SizedBox(height: TSizes.spaceBtwItems),
+
+                Row(
+                  children: [
+                    for (int i = 0; i < 3; i++) //contianer
+                      TCircularContainer(
+                        width: 20,
+                        height: 20,
+                        backgroundColor: TColors.green,
+                      ),
+                  ],
+                ),
               ],
             ),
           ),
