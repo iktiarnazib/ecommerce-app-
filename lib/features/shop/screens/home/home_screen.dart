@@ -49,13 +49,18 @@ class HomeScreen extends StatelessWidget {
           //* Body
           Padding(
             padding: const EdgeInsets.all(TSizes.defaultSpace),
-            child: CarouselSlider(
-              items: [
-                TRoundedImage(imageUrl: TImage.promoBanner1),
-                TRoundedImage(imageUrl: TImage.promoBanner2),
-                TRoundedImage(imageUrl: TImage.promoBanner3),
+            child: Column(
+              children: [
+                CarouselSlider(
+                  items: [
+                    const TRoundedImage(imageUrl: TImage.promoBanner1),
+                    const TRoundedImage(imageUrl: TImage.promoBanner2),
+                    const TRoundedImage(imageUrl: TImage.promoBanner3),
+                  ],
+                  options: CarouselOptions(viewportFraction: 1),
+                ),
+                const SizedBox(height: TSizes.spaceBtwSections),
               ],
-              options: CarouselOptions(viewportFraction: 0.8),
             ),
           ),
         ],
