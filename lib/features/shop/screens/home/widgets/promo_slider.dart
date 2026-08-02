@@ -1,16 +1,19 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
+import 'package:ecommerce/features/shop/controllers/home_controllers.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class TPromoSlider extends StatelessWidget {
+class TPromoSlider extends ConsumerWidget {
   const TPromoSlider({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final promoIndexController = ref.watch(promoIndexProvider);
     return Column(
       children: [
         CarouselSlider(
