@@ -63,11 +63,13 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: TSizes.spaceBtwItems),
 
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     for (int i = 0; i < 3; i++) //contianer
-                      TCircularContainer(
+                      const TCircularContainer(
                         width: 20,
-                        height: 20,
+                        height: 4,
+                        margin: EdgeInsets.only(right: TSizes.sm),
                         backgroundColor: TColors.green,
                       ),
                   ],
