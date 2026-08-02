@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
@@ -48,7 +49,14 @@ class HomeScreen extends StatelessWidget {
           //* Body
           Padding(
             padding: const EdgeInsets.all(TSizes.defaultSpace),
-            child: TRoundedImage(imageUrl: TImage.promoBanner1),
+            child: CarouselSlider(
+              items: [
+                TRoundedImage(imageUrl: TImage.promoBanner1),
+                TRoundedImage(imageUrl: TImage.promoBanner2),
+                TRoundedImage(imageUrl: TImage.promoBanner3),
+              ],
+              options: CarouselOptions(viewportFraction: 0.8),
+            ),
           ),
         ],
       ),
