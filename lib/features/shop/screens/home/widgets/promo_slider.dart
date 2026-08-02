@@ -22,7 +22,12 @@ class TPromoSlider extends ConsumerWidget {
             const TRoundedImage(imageUrl: TImage.promoBanner2),
             const TRoundedImage(imageUrl: TImage.promoBanner3),
           ],
-          options: CarouselOptions(viewportFraction: 1),
+          options: CarouselOptions(
+            viewportFraction: 1,
+            onPageChanged: (index, reason) {
+              ref.read(promoIndexProvider.notifier).state = index;
+            },
+          ),
         ),
         const SizedBox(height: TSizes.spaceBtwItems),
 
@@ -30,11 +35,13 @@ class TPromoSlider extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             for (int i = 0; i < 3; i++) //contianer
-              const TCircularContainer(
+              TCircularContainer(
                 width: 20,
                 height: 4,
                 margin: EdgeInsets.only(right: TSizes.sm),
-                backgroundColor: TColors.green,
+                backgroundColor: promoIndexController == i
+                    ? TColors.primary
+                    : TColors.green,
               ),
           ],
         ),
