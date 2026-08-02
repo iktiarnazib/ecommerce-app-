@@ -4,7 +4,6 @@ import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_catagories.dart';
-import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_string.dart';
