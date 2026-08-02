@@ -16,6 +16,7 @@ class HomeScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
+          //* Header Container
           TPrimaryHeaderContainer(
             child: Column(
               children: [
@@ -42,7 +43,48 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
+          //* Body
+          Padding(
+            padding: const EdgeInsets.all(TSizes.defaultSpace),
+            child: TRoundedImage(),
+          ),
         ],
+      ),
+    );
+  }
+}
+
+class TRoundedImage extends StatelessWidget {
+  final double? height, width;
+  final String imageUrl;
+  final bool applyImageRadius;
+  final BoxBorder? border;
+  final Color backgroundColor;
+  final BoxFit? fit;
+  final EdgeInsetsGeometry? padding;
+  final bool isNetworkImage;
+  final VoidCallback? onPressed;
+  const TRoundedImage({
+    super.key,
+    this.height,
+    this.width,
+    required this.imageUrl,
+    required this.applyImageRadius,
+    this.border,
+    required this.backgroundColor,
+    this.fit,
+    this.padding,
+    required this.isNetworkImage,
+    this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(TSizes.md)),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(TSizes.defaultSpace),
+        child: Image(image: AssetImage(TImage.promoBanner1), fit: BoxFit.cover),
       ),
     );
   }
