@@ -5,6 +5,7 @@ import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_catagories.dart';
+import 'package:ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -50,32 +51,7 @@ class HomeScreen extends StatelessWidget {
           //* Body
           Padding(
             padding: const EdgeInsets.all(TSizes.defaultSpace),
-            child: Column(
-              children: [
-                CarouselSlider(
-                  items: [
-                    const TRoundedImage(imageUrl: TImage.promoBanner1),
-                    const TRoundedImage(imageUrl: TImage.promoBanner2),
-                    const TRoundedImage(imageUrl: TImage.promoBanner3),
-                  ],
-                  options: CarouselOptions(viewportFraction: 1),
-                ),
-                const SizedBox(height: TSizes.spaceBtwItems),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    for (int i = 0; i < 3; i++) //contianer
-                      const TCircularContainer(
-                        width: 20,
-                        height: 4,
-                        margin: EdgeInsets.only(right: TSizes.sm),
-                        backgroundColor: TColors.green,
-                      ),
-                  ],
-                ),
-              ],
-            ),
+            child: const TPromoSlider(),
           ),
         ],
       ),
