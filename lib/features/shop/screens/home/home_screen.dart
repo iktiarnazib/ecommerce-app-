@@ -80,11 +80,31 @@ class TRoundedImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(TSizes.md)),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(TSizes.defaultSpace),
-        child: Image(image: AssetImage(TImage.promoBanner1), fit: BoxFit.cover),
+    return GestureDetector(
+      onTap: onPressed,
+      child: Container(
+        height: height,
+        width: width,
+        padding: padding,
+        decoration: BoxDecoration(
+          borderRadius: applyImageRadius
+              ? BorderRadius.circular(TSizes.md)
+              : BorderRadius.zero,
+          border: border,
+          color: backgroundColor,
+        ),
+
+        child: ClipRRect(
+          borderRadius: applyImageRadius
+              ? BorderRadius.circular(TSizes.md)
+              : BorderRadius.zero,
+          child: Image(
+            image: isNetworkImage
+                ? NetworkImage(imageUrl)
+                : AssetImage(imageUrl),
+            fit: fit,
+          ),
+        ),
       ),
     );
   }
