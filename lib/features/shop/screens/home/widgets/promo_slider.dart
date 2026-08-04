@@ -9,7 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class TPromoSlider extends ConsumerWidget {
-  const TPromoSlider({super.key});
+  final List<String> banners;
+  const TPromoSlider({super.key, required this.banners});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -17,11 +18,10 @@ class TPromoSlider extends ConsumerWidget {
     return Column(
       children: [
         CarouselSlider(
-          items: [
-            const TRoundedImage(imageUrl: TImage.promoBanner1),
-            const TRoundedImage(imageUrl: TImage.promoBanner2),
-            const TRoundedImage(imageUrl: TImage.promoBanner3),
-          ],
+          items: banners
+              .map((url) => TRoundedImage(imageUrl: url))
+              .toList()
+              .toList(),
           options: CarouselOptions(
             viewportFraction: 1,
             onPageChanged: (index, reason) {
