@@ -1,5 +1,5 @@
 import 'package:ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
-import 'package:ecommerce/common/widgets/section_heading/section_heading.dart';
+import 'package:ecommerce/common/widgets/product/product_cart/product_cart_vertical.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_app_bar.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:ecommerce/features/shop/screens/home/widgets/home_catagories.dart';
@@ -57,9 +57,8 @@ class HomeScreen extends StatelessWidget {
                     TImage.promoBanner2,
                     TImage.promoBanner3,
                   ],
-
-                  //*Popular product section
                 ),
+                TProductCartVertical(),
               ],
             ),
           ),
