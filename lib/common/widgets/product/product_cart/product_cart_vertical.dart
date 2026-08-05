@@ -1,7 +1,7 @@
+import 'package:ecommerce/common/styles/shadow_style.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
-import 'package:ecommerce/utils/theme/shadows/shadow_style.dart';
 import 'package:flutter/material.dart';
 
 class TProductCartVertical extends StatelessWidget {
