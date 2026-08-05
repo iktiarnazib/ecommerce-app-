@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/styles/shadow_style.dart';
+import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
@@ -16,6 +17,18 @@ class TProductCartVertical extends StatelessWidget {
         boxShadow: [TShadowStyle.verticalProductShadow],
         borderRadius: BorderRadius.circular(TSizes.productImageRadius),
         color: dark ? TColors.darkGrey : TColors.white,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          //* Thumbnail, wishlist button, discount tag
+          TCircularContainer(
+            height: 180,
+            padding: TSizes.sm,
+            backgroundColor: dark ? TColors.white : TColors.dark,
+          ),
+          //* Details
+        ],
       ),
     );
   }
