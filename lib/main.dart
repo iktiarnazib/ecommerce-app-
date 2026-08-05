@@ -9,7 +9,8 @@ void main() {
   runApp(ProviderScope(child: const App()));
 }
 
-//* mytodo listv15:
+//* mytodo listv16:
 //* continue => https://www.youtube.com/watch?v=JsPMdnkiav8&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=16 (minute: 08:30)
 //* shoot gig video for fiverr
 //* finish the rejected build on playstore.
+//* fix supabase profile picture not uplaoding issue.
