@@ -1,6 +1,8 @@
 import 'package:ecommerce/common/styles/shadow_style.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
+import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,8 @@ class TProductCartVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Container(
-      height: 180,
+      width: 180,
+      padding: EdgeInsets.all(1),
       decoration: BoxDecoration(
         boxShadow: [TShadowStyle.verticalProductShadow],
         borderRadius: BorderRadius.circular(TSizes.productImageRadius),
@@ -22,14 +25,13 @@ class TProductCartVertical extends StatelessWidget {
         children: [
           //* Thumbnail, wishlist button, discount tag
           TCircularContainer(
-            width: 180,
             height: 180,
-            padding: const EdgeInsets.all(TSizes.sm),
-            radius: 0,
+            padding: EdgeInsets.all(TSizes.sm),
             backgroundColor: dark ? TColors.dark : TColors.white,
             child: Stack(
               children: [
                 //* Thumbnail Image
+                TRoundedImage(imageUrl: TImage.productImage6),
               ],
             ),
           ),
