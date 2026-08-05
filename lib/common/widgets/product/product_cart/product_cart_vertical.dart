@@ -19,13 +19,14 @@ class TProductCartVertical extends StatelessWidget {
         color: dark ? TColors.darkGrey : TColors.white,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           //* Thumbnail, wishlist button, discount tag
           TCircularContainer(
+            width: 180,
             height: 180,
-            padding: TSizes.sm,
-            backgroundColor: dark ? TColors.white : TColors.dark,
+            padding: const EdgeInsets.all(TSizes.sm),
+            radius: 0,
+            backgroundColor: dark ? TColors.dark : TColors.white,
           ),
           //* Details
         ],
