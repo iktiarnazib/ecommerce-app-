@@ -27,6 +27,11 @@ class TProductCartVertical extends StatelessWidget {
             padding: const EdgeInsets.all(TSizes.sm),
             radius: 0,
             backgroundColor: dark ? TColors.dark : TColors.white,
+            child: Stack(
+              children: [
+                //* Thumbnail Image
+              ],
+            ),
           ),
           //* Details
         ],
