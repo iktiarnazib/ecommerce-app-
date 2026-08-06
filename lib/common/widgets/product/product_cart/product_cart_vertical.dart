@@ -31,7 +31,12 @@ class TProductCartVertical extends StatelessWidget {
             child: Stack(
               children: [
                 //* Thumbnail Image
-                TRoundedImage(imageUrl: TImage.productImage6),
+                TRoundedImage(
+                  imageUrl: TImage.productImage1,
+                  applyImageRadius: true,
+                ),
+                //* Sale Tag
+                TCircularContainer(),
               ],
             ),
           ),
