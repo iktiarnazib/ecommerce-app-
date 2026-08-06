@@ -26,64 +26,65 @@ class TImage {
   static const String promoBanner3 = "assets/images/banners/promoBanner3.png";
 
   //* Product Images
+  //* Product Images
   static const String productImage1 =
-      "assets/images/products/productImage1.avif";
+      "assets/images/products/productImage1.png";
   static const String productImage2 =
-      "assets/images/products/productImage2.avif";
+      "assets/images/products/productImage2.png";
   static const String productImage3 =
-      "assets/images/products/productImage3.avif";
+      "assets/images/products/productImage3.png";
   static const String productImage4 =
-      "assets/images/products/productImage4.avif";
+      "assets/images/products/productImage4.png";
   static const String productImage5 =
-      "assets/images/products/productImage5.avif";
+      "assets/images/products/productImage5.png";
   static const String productImage6 =
-      "assets/images/products/productImage6.avif";
+      "assets/images/products/productImage6.png";
   static const String productImage7 =
-      "assets/images/products/productImage7.avif";
+      "assets/images/products/productImage7.png";
   static const String productImage8 =
-      "assets/images/products/productImage8.avif";
+      "assets/images/products/productImage8.png";
   static const String productImage9 =
-      "assets/images/products/productImage9.avif";
+      "assets/images/products/productImage9.png";
   static const String productImage10 =
-      "assets/images/products/productImage10.avif";
+      "assets/images/products/productImage10.png";
   static const String productImage11 =
-      "assets/images/products/productImage11.avif";
+      "assets/images/products/productImage11.png";
   static const String productImage12 =
-      "assets/images/products/productImage12.avif";
+      "assets/images/products/productImage12.png";
   static const String productImage13 =
-      "assets/images/products/productImage13.avif";
+      "assets/images/products/productImage13.png";
   static const String productImage14 =
-      "assets/images/products/productImage14.avif";
+      "assets/images/products/productImage14.png";
   static const String productImage15 =
-      "assets/images/products/productImage15.avif";
+      "assets/images/products/productImage15.png";
   static const String productImage16 =
-      "assets/images/products/productImage16.avif";
+      "assets/images/products/productImage16.png";
   static const String productImage17 =
-      "assets/images/products/productImage17.avif";
+      "assets/images/products/productImage17.png";
   static const String productImage18 =
-      "assets/images/products/productImage18.avif";
+      "assets/images/products/productImage18.png";
   static const String productImage19 =
-      "assets/images/products/productImage19.avif";
+      "assets/images/products/productImage19.png";
   static const String productImage20 =
-      "assets/images/products/productImage20.avif";
+      "assets/images/products/productImage20.png";
   static const String productImage21 =
-      "assets/images/products/productImage21.avif";
+      "assets/images/products/productImage21.png";
   static const String productImage22 =
-      "assets/images/products/productImage22.avif";
+      "assets/images/products/productImage22.png";
   static const String productImage23 =
-      "assets/images/products/productImage23.avif";
+      "assets/images/products/productImage23.png";
   static const String productImage24 =
-      "assets/images/products/productImage24.avif";
+      "assets/images/products/productImage24.png";
   static const String productImage25 =
-      "assets/images/products/productImage25.avif";
+      "assets/images/products/productImage25.png";
   static const String productImage26 =
-      "assets/images/products/productImage26.avif";
+      "assets/images/products/productImage26.png";
   static const String productImage27 =
-      "assets/images/products/productImage27.avif";
+      "assets/images/products/productImage27.png";
   static const String productImage28 =
-      "assets/images/products/productImage28.avif";
+      "assets/images/products/productImage28.png";
   static const String productImage29 =
-      "assets/images/products/productImage29.avif";
+      "assets/images/products/productImage29.png";
   static const String productImage30 =
-      "assets/images/products/productImage30.avif";
+      "assets/images/products/productImage30.png";
 }
