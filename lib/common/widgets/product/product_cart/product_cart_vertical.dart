@@ -36,7 +36,12 @@ class TProductCartVertical extends StatelessWidget {
                   applyImageRadius: true,
                 ),
                 //* Sale Tag
-                TCircularContainer(),
+                TCircularContainer(
+                  radius: TSizes.sm,
+                  backgroundColor: dark
+                      ? TColors.secondary.withAlpha(25)
+                      : TColors.primary,
+                ),
               ],
             ),
           ),
