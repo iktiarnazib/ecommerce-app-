@@ -1,11 +1,11 @@
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class TCircularIcon extends StatelessWidget {
   final double? height, width, size;
   final EdgeInsetsGeometry? padding;
   final Color? color, backgroundColor;
+  final IconData? icon;
   final Function()? onPressed;
 
   const TCircularIcon({
@@ -13,7 +13,7 @@ class TCircularIcon extends StatelessWidget {
     this.height,
     this.width,
     this.size = TSizes.lg,
-
+    this.icon,
     this.padding,
     this.color,
     this.backgroundColor,
@@ -32,7 +32,7 @@ class TCircularIcon extends StatelessWidget {
       ),
       child: IconButton(
         onPressed: onPressed,
-        icon: Icon(Iconsax.heart5, color: color, size: size),
+        icon: Icon(icon, color: color, size: size),
       ),
     );
   }

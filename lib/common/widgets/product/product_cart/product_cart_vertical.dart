@@ -61,11 +61,7 @@ class TProductCartVertical extends StatelessWidget {
                 //*Favorite Icon Button
                 Positioned(
                   right: 5,
-                  child: TCircularIcon(
-                    onPressed: () {
-                      debugPrint("Favorite 1");
-                    },
-                  ),
+                  child: TCircularIcon(icon: Iconsax.heart5, color: Colors.red),
                 ),
               ],
             ),
