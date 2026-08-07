@@ -60,13 +60,29 @@ class TProductCartVertical extends StatelessWidget {
 
                 //*Favorite Icon Button
                 Positioned(
-                  right: 5,
+                  top: 0,
+                  right: 0,
                   child: TCircularIcon(icon: Iconsax.heart5, color: Colors.red),
                 ),
               ],
             ),
           ),
+
           //* Details
+          Padding(
+            padding: EdgeInsets.only(left: TSizes.sm),
+            child: Column(
+              children: [
+                Text(
+                  "Red Stripe Nike Air",
+                  style: Theme.of(context).textTheme.titleSmall,
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 2,
+                  textAlign: TextAlign.left,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
