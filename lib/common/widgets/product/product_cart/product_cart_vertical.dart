@@ -70,12 +70,12 @@ class TProductCartVertical extends StatelessWidget {
 
           //* Details
           Padding(
-            padding: EdgeInsets.only(left: TSizes.sm),
+            padding: const EdgeInsets.only(left: TSizes.sm),
             child: Column(
               children: [
                 Text(
                   "Red Stripe Nike Air",
-                  style: Theme.of(context).textTheme.titleSmall,
+                  style: Theme.of(context).textTheme.labelLarge,
                   overflow: TextOverflow.ellipsis,
                   maxLines: 2,
                   textAlign: TextAlign.left,
