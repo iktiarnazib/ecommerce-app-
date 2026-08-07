@@ -21,10 +21,11 @@ class TProductCartVertical extends StatelessWidget {
         borderRadius: BorderRadius.circular(TSizes.productImageRadius),
         color: dark ? TColors.darkGrey : TColors.white,
       ),
+
       child: Column(
         children: [
           //* Thumbnail, wishlist button, discount tag
-          TCircularContainer(
+          TRoundedContainer(
             height: 180,
             padding: EdgeInsets.all(TSizes.sm),
             backgroundColor: dark ? TColors.dark : TColors.white,
@@ -32,15 +33,18 @@ class TProductCartVertical extends StatelessWidget {
               children: [
                 //* Thumbnail Image
                 TRoundedImage(
-                  imageUrl: TImage.productImage1,
+                  imageUrl: TImage.productImage2,
                   applyImageRadius: true,
                 ),
+
                 //* Sale Tag
-                TCircularContainer(
+                TRoundedContainer(
                   radius: TSizes.sm,
-                  backgroundColor: dark
-                      ? TColors.secondary.withAlpha(25)
-                      : TColors.primary,
+                  backgroundColor: TColors.secondary.withAlpha(25),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: TSizes.sm,
+                    vertical: TSizes.md,
+                  ),
                 ),
               ],
             ),
