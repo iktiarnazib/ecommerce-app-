@@ -34,7 +34,7 @@ class TPromoSlider extends ConsumerWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             for (int i = 0; i < 3; i++) //contianer
-              TCircularContainer(
+              TRoundedContainer(
                 width: 20,
                 height: 4,
                 margin: EdgeInsets.only(right: TSizes.sm),
