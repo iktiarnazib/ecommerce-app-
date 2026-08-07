@@ -1,5 +1,6 @@
 import 'package:ecommerce/common/styles/shadow_style.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:ecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
@@ -58,32 +59,13 @@ class TProductCartVertical extends StatelessWidget {
                 ),
 
                 //*Favorite Icon Button
-                Positioned(right: 5, child: TCircularIcon(dark: dark)),
+                Positioned(right: 5, child: TCircularIcon()),
               ],
             ),
           ),
           //* Details
         ],
       ),
-    );
-  }
-}
-
-class TCircularIcon extends StatelessWidget {
-  const TCircularIcon({super.key, required this.dark});
-
-  final bool dark;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: dark
-            ? TColors.black.withAlpha(220)
-            : TColors.white.withAlpha(220),
-        borderRadius: BorderRadius.circular(100),
-      ),
-      child: IconButton(onPressed: () {}, icon: const Icon(Iconsax.heart5)),
     );
   }
 }
