@@ -2,6 +2,7 @@ import 'package:ecommerce/common/styles/shadow_style.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:ecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
+import 'package:ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
@@ -72,15 +73,7 @@ class TProductCartVertical extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: TSizes.sm),
             child: Column(
-              children: [
-                Text(
-                  "Red Stripe Nike Air",
-                  style: Theme.of(context).textTheme.labelLarge,
-                  overflow: TextOverflow.ellipsis,
-                  maxLines: 2,
-                  textAlign: TextAlign.left,
-                ),
-              ],
+              children: [TProductTitleText(title: "Red Stripe Nike Air")],
             ),
           ),
         ],
