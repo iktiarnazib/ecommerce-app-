@@ -38,18 +38,34 @@ class TProductCartVertical extends StatelessWidget {
                 ),
 
                 //* Sale Tag
-                TRoundedContainer(
-                  radius: TSizes.sm,s
-                  backgroundColor: TColors.secondary.withAlpha(200),
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: TSizes.sm,
-                    vertical: TSizes.xs,
+                Positioned(
+                  top: 12,
+                  child: TRoundedContainer(
+                    radius: TSizes.sm,
+                    backgroundColor: TColors.secondary.withAlpha(200),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: TSizes.sm,
+                      vertical: TSizes.xs,
+                    ),
+                    child: Text(
+                      "25%",
+                      style: Theme.of(
+                        context,
+                      ).textTheme.labelLarge!.apply(color: TColors.black),
+                    ),
                   ),
-                  child: Text(
-                    "25%",
-                    style: Theme.of(
-                      context,
-                    ).textTheme.labelLarge!.apply(color: TColors.black),
+                ),
+
+                //*Favorite Icon Button
+                Positioned(
+                  right: 5,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: dark
+                          ? TColors.black.withAlpha(220)
+                          : TColors.white.withAlpha(220),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
                   ),
                 ),
               ],
