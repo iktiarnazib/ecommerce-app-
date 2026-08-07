@@ -1,11 +1,13 @@
 import 'package:ecommerce/common/styles/shadow_style.dart';
 import 'package:ecommerce/common/widgets/custom_shapes/containers/circular_container.dart';
+import 'package:ecommerce/common/widgets/icons/circular_icon.dart';
 import 'package:ecommerce/common/widgets/image/rounded_image.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/image_string.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class TProductCartVertical extends StatelessWidget {
   const TProductCartVertical({super.key});
@@ -57,17 +59,7 @@ class TProductCartVertical extends StatelessWidget {
                 ),
 
                 //*Favorite Icon Button
-                Positioned(
-                  right: 5,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: dark
-                          ? TColors.black.withAlpha(220)
-                          : TColors.white.withAlpha(220),
-                      borderRadius: BorderRadius.circular(100),
-                    ),
-                  ),
-                ),
+                Positioned(right: 5, child: TCircularIcon()),
               ],
             ),
           ),
