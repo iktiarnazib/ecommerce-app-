@@ -40,10 +40,16 @@ class TProductCartVertical extends StatelessWidget {
                 //* Sale Tag
                 TRoundedContainer(
                   radius: TSizes.sm,
-                  backgroundColor: TColors.secondary.withAlpha(25),
+                  backgroundColor: TColors.secondary.withAlpha(200),
                   padding: const EdgeInsets.symmetric(
                     horizontal: TSizes.sm,
-                    vertical: TSizes.md,
+                    vertical: TSizes.xs,
+                  ),
+                  child: Text(
+                    "25%",
+                    style: Theme.of(
+                      context,
+                    ).textTheme.labelLarge!.apply(color: TColors.black),
                   ),
                 ),
               ],
