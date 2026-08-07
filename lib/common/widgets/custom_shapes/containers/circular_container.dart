@@ -11,8 +11,8 @@ class TRoundedContainer extends StatelessWidget {
   final EdgeInsetsGeometry? margin;
   const TRoundedContainer({
     super.key,
-    this.width = 400,
-    this.height = 400,
+    this.width,
+    this.height,
     this.radius = 400,
     this.padding,
     this.margin,

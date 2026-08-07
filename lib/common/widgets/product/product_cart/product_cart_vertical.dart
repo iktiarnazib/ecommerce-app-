@@ -39,7 +39,7 @@ class TProductCartVertical extends StatelessWidget {
 
                 //* Sale Tag
                 TRoundedContainer(
-                  radius: TSizes.sm,
+                  radius: TSizes.sm,s
                   backgroundColor: TColors.secondary.withAlpha(200),
                   padding: const EdgeInsets.symmetric(
                     horizontal: TSizes.sm,
