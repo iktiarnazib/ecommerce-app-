@@ -12,7 +12,3 @@ void main() {
 //* mytodo listv18:
 //* continue => https://www.youtube.com/watch?v=JsPMdnkiav8&list=PL5jb9EteFAOAusKTSuJ5eRl1BapQmMDT6&index=16 (minute: 08:30)
 //* shoot gig video for fiverr
-//* finish the rejected build on playstore.
-//* fix supabase profile picture not uplaoding issue.
-//* Remove all the background from the product image.
-//* Playstore released finally yippy
